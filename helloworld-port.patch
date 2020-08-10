@@ -1,0 +1,35 @@
+diff --git a/activity.py b/activity.py
+index 8eb65e7..76ad943 100644
+--- a/activity.py
++++ b/activity.py
+@@ -25,15 +25,17 @@ from gettext import gettext as _
+ from sugar3.activity import activity
+ from sugar3.graphics.toolbarbox import ToolbarBox
+ from sugar3.activity.widgets import StopButton
+-from sugar3.activity.widgets import ActivityToolbarButton
+ 
++from sugarapp.widgets import SugarCompatibleActivity
++from sugarapp.widgets import ExtendedActivityToolbarButton
+ 
+-class HelloWorldActivity(activity.Activity):
++
++class HelloWorldActivity(SugarCompatibleActivity):
+     """HelloWorldActivity class as specified in activity.info"""
+ 
+     def __init__(self, handle):
+         """Set up the HelloWorld activity."""
+-        activity.Activity.__init__(self, handle)
++        SugarCompatibleActivity.__init__(self, handle)
+ 
+         # we do not have collaboration features
+         # make the share option insensitive
+@@ -42,7 +44,7 @@ class HelloWorldActivity(activity.Activity):
+         # toolbar with the new toolbar redesign
+         toolbar_box = ToolbarBox()
+ 
+-        activity_button = ActivityToolbarButton(self)
++        activity_button = ExtendedActivityToolbarButton(self)
+         toolbar_box.toolbar.insert(activity_button, 0)
+         activity_button.show()
+ 
+
