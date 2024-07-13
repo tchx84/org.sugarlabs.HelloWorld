@@ -1,8 +1,8 @@
 diff --git a/activity/activity.info b/activity/activity.info
-index 4c1a510..2aaade6 100644
+index 4c1a510..7af0ea1 100644
 --- a/activity/activity.info
 +++ b/activity/activity.info
-@@ -2,7 +2,16 @@
+@@ -2,7 +2,17 @@
  name = HelloWorld
  activity_version = 7
  bundle_id = org.sugarlabs.HelloWorld
@@ -18,5 +18,5 @@ index 4c1a510..2aaade6 100644
 +tags = Education
 +update_contact = tch@sugarlabs.org
 +developer_name = Sugar Labs Community
++developer_id = org.sugarlabs
 +screenshots = https://i.imgur.com/N1uXt6S.png
-
