@@ -7,9 +7,9 @@ This is an example Sugar Desktop Activity, that follows the "Hello World" tradit
 ```
 git clone https://github.com/tchx84/org.sugarlabs.HelloWorld.git
 cd org.sugarlabs.HelloWorld
-flatpak -y --user install flathub org.gnome.{Platform,Sdk}//46
-flatpak -y --user install org.sugarlabs.BaseApp//24.04
-flatpak-builder --user --force-clean --install build org.sugarlabs.HelloWorld.json
+flatpak -y --user install flathub org.gnome.{Platform,Sdk}//50beta
+flatpak -y --user install org.sugarlabs.BaseApp//master
+flatpak-builder --user --force-clean --install --disable-rofiles-fuse build org.sugarlabs.HelloWorld.json
 ```
 
 ## Check For Updates
